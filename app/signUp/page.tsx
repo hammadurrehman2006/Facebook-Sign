@@ -4,22 +4,23 @@ export default function SignupPage() {
     return (
         <div className="bg-gray-100 min-h-screen flex items-center justify-center px-4 lg:px-0">
             <div className="w-full max-w-4xl flex flex-col items-center lg:items-start lg:justify-between">
-                
-                    <Image
-                        src="/fblogo.svg"
-                        alt="Facebook Logo"
-                        width={300}
-                        height={100}
-                        className="mx-auto"
-                    />
-                    
+
+                <Image
+                    src="/fblogo.svg"
+                    alt="Facebook Logo"
+                    width={300}
+                    height={100}
+                    className="mx-auto"
+                />
+
 
                 {/* Signup Form */}
-                <div className="bg-white w-full lg:w-1/2 p-8 rounded-xl mx-auto shadow-md">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+                <div className="bg-white w-full lg:w-1/2 p-3 rounded-lg mx-auto mb-6 shadow-md shadow-gray-400">
+                    <h2 className="text-2xl font-bold text-gray-900 text-center">
                         Create a new account
                     </h2>
-                    <p className="text-center text-gray-600 mb-4">It’s quick and easy.</p>
+                    <p className="text-center text-gray-600 text-sm mb-4 mt-1">It’s quick and easy.</p>
+                    <hr className="mb-5 mr-0 ml-0" />
                     <form>
                         {/* Name Fields */}
                         <div className="flex flex-col text-black lg:flex-row lg:space-x-4">
@@ -90,7 +91,7 @@ export default function SignupPage() {
 
                         {/* Gender */}
                         <label className="block text-gray-600 mt-4 mb-2">Gender</label>
-                        <div className="flex space-x-4">
+                        <div className="flex space-x-4 sm:mr-2">
                             <label className="flex items-center w-1/3 border border-gray-300 text-black p-3 rounded-md focus:outline-blue-500">
                                 <input
                                     type="radio"
@@ -119,11 +120,11 @@ export default function SignupPage() {
                                 Custom
                             </label>
                         </div>
-                        
+
                         {/* Email or Mobile */}
                         <input
                             type="email"
-                            placeholder="Mobile number or email"
+                            placeholder="Mobile number or email address"
                             className="w-full border border-gray-300 p-3 rounded-md mt-4 focus:outline-blue-500"
                             required
                         />
@@ -136,9 +137,11 @@ export default function SignupPage() {
                             required
                         />
 
-                    <p className="text-gray-500 text-center mt-4 text-sm">
-                        By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.
-                    </p>
+                        <p className="text-gray-500 text-left mt-4 text-[11px]">People who use our service may have uploaded your contact information to Facebook. 
+                            <a href="" className="text-blue-700 hover:underline">Learn more.</a> <br />
+                        </p>
+                        <p className="text-gray-500 text-left mt-2 text-[11px]">        
+                            By clicking Sign Up, you agree to our <a href="" className="text-blue-700 hover:underline">Terms</a>, <a href="" className="text-blue-700 hover:underline">Privacy Policy</a> and <a href="" className="text-blue-700 hover:underline">Cookies Policy.</a> <br className="leading-none" /> You may receive SMS notifications from us and can opt out at any time.</p>
 
                         {/* Signup Button */}
                         <button
