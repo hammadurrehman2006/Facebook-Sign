@@ -1,13 +1,13 @@
-"use client"
+// "use client"
 import Image from "next/image"
 import Link from "next/link";
 import { useState } from "react";
 
 function LogIn() {
-    const [showPassword, setShowPassword] = useState(false)
-    const togglePasswordVisibility = () => {
-        setShowPassword(!showPassword);
-    };
+    // const [showPassword, setShowPassword] = useState(false)
+    // const togglePasswordVisibility = () => {
+    //     setShowPassword(!showPassword);
+    // };
     return (
         <>
 <div>
@@ -28,7 +28,7 @@ function LogIn() {
                     placeholder="Email address or phone number"
                 />
                 <input
-                    type={showPassword ? 'text' : 'password'}
+                    // type={showPassword ? 'text' : 'password'}
                     className="my-2 border border-1 border-gray-200 p-3 rounded-md"
                     placeholder="Password"
                 />
