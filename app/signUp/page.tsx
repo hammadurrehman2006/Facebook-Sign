@@ -136,19 +136,19 @@ export default function SignupPage() {
                             required
                         />
 
+                    <p className="text-gray-500 text-center mt-4 text-sm">
+                        By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.
+                    </p>
 
                         {/* Signup Button */}
                         <button
                             type="submit"
-                            className="w-full bg-green-500 text-white py-3 mt-6 rounded-md hover:bg-green-600 font-bold text-lg"
+                            className="w-1/2 bg-green-500 text-white flex flex-col items-center mx-auto my-2 py-2 px-2 rounded-lg hover:bg-green-600 font-bold text-lg"
                         >
                             Sign Up
                         </button>
                     </form>
 
-                    <p className="text-gray-500 text-center mt-4 text-sm">
-                        By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy.
-                    </p>
                 </div>
             </div>
         </div>

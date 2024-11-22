@@ -36,7 +36,7 @@ function LogIn() {
                 <span>
                     <hr className="my-2" />
                 </span>
-                <Link href={"./signUp"} className="bg-green-500 hover:bg-green-700 mx-auto my-2 py-2 px-2 w-fit rounded-lg">                
+                <Link href={"./signUp"} className="bg-green-500 hover:bg-green-700 font-bold mx-auto my-2 py-2 px-2 w-fit rounded-lg">                
                 <button>
                     Create new account
                 </button></Link>
